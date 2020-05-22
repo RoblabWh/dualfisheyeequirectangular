@@ -1,4 +1,4 @@
-# dualfisheye2equirectangular
+# dual_fisheye2equirectangular
 Fast conversion of a dual fisheye video to equirectangular video with a mapping table
 
 git clone https://github.com/RoblabWh/dualfisheyeequirectangular
