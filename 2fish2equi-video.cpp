@@ -70,7 +70,7 @@ int main(int argc, char** argv) {
 	    //printf("%d %d\n",i,j);
 	    equiframe.at<Vec3b>(i,j) = frame.at<Vec3b>(mapy[i][j],mapx[i][j]);
 	  }
-	  }
+	}
 	// Auf den Schirm Spoki
         imshow("frame", equiframe);
 	nrframes++;
