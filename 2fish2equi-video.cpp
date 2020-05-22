@@ -17,7 +17,7 @@ int main(int argc, char** argv) {
     if ( argc != 3 )
     {
       printf("usage: %s <video> <mapping table>\n",argv[0]);
-      printf("usage: %s VID_20200512_150448_848.mp4 mapping-table.txt\n",argv[0]);      
+      printf("usage: %s example.mp4 mapping-table-960-1920.txt\n",argv[0]);      
       return -1;
     }
     printf("Processing video %s with mapping table %s \n",argv[1], argv[2]);      
