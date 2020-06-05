@@ -62,6 +62,10 @@ int main(int argc, char** argv) {
     {
 	
         cap >> frame; // get a new frame from camera
+	// If the frame is empty, break immediately
+        if (frame.empty()) break;
+	
+	// init while cloning
 	if (nrframes == 0) equiframe = frame.clone();
 
         //map to equirectangular
@@ -81,6 +85,11 @@ int main(int argc, char** argv) {
 	}
         if(waitKey(1) == 27) break;
     }
+	
+    // When everything done, release the video capture object
+    cap.release();
+    // Closes all the frames
+    destroyAllWindows();
     
     return 0;
       
