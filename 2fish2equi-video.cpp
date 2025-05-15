@@ -3,7 +3,7 @@
 #include <time.h>
 #include <opencv2/opencv.hpp>
 
-// g++ -O2  -o 2fish2equi-video 2fish2equi-video.cpp  `pkg-config --cflags opencv` `pkg-config --libs opencv`
+// g++ -O2  -o 2fish2equi-video 2fish2equi-video.cpp  `pkg-config --cflags opencv4` `pkg-config --libs opencv4`
 // -O2 2x faster execution
 
 using namespace cv;
